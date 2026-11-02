@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+}
+.stage {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  background: #0b1220;
+}
+.ball {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #f2b84b;
+  transition: background 0.2s ease, scale 0.1s ease;
+  animation: moveX 7s linear infinite alternate,
+      moveY 2.5s linear infinite alternate;
+  animation-play-state: paused;
+}
+.stage:hover .ball {
+  animation-play-state: running;
+  background: #e86a8a;
+}
+.stage:active .ball {
+  scale: 1.4;
+}
+@keyframes moveX {
+  from { left: 0; }
+  to   { left: calc(100% - 60px); }
+}
+@keyframes moveY {
+  from { top: 0; }
+  to   { top: calc(100% - 60px); }
+}
