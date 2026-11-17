@@ -1,0 +1,58 @@
+body {
+
+    font-family: Arial, sans-serif;
+
+    background-color: rgb(26, 174, 58);
+
+    color: black;
+
+    margin: 40px;
+
+}
+
+h1 {
+
+    font-size: 36px;
+
+}
+
+h2 {
+
+    font-size: 25px;
+
+}
+
+h3 {
+
+    font-size: 20px;
+
+}
+
+.artwork {
+
+    margin-top: 35px;
+
+    margin-bottom: 35px;
+
+}
+
+img {
+
+    width: 300px;
+
+    height: auto;
+
+}
+
+a {
+
+    color: rgb(255, 183, 0);
+
+}
+
+hr {
+
+    margin-top: 25px;
+
+    margin-bottom: 25px;
+}
